@@ -1,0 +1,50 @@
+h3-footer
+{
+    color: white;
+}
+
+ul
+{
+    color: white;
+}
+
+
+.container-logo
+{
+    background-color: black;
+}
+
+.cuadrado-perfecto
+{
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.cuadrado-perfecto img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.columna-33
+{
+  width: 33.33%;
+}
+
+.container-footer
+{
+    background-color: black;
+
+}
+
+.barra-footer
+{
+    background-color: black;
+
+}

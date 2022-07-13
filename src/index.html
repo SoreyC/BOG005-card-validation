@@ -2,13 +2,129 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Reconocer Tarjeta de crédito válida">
     <title>Tarjeta de crédito válida</title>
+    <link rel="shortcut icon" href="./img/favicon_package_v0.16/favicon-32x32.png"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header> hola mundo</header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="container-logo">
+        <a href="index.html">
+          <img src="./img/Logo-Bocados-Julo2020.jpg">
+        </a>
+        <nav>
+          <a href="#productos">Productos</a>
+          <a href="#contactenos">Contactenos</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Bienvenidos a Bocados</h1>
+      <p>"Llevamos bocados de sabor a los hogares bogotanos" 
+      </p>
+    <section id="productos" class="seccion">
+        <div class="container">
+          <div class="row">
+            <div class="columna columna-33">
+              <div class="bloque-producto1">
+                <div class="bloque-img-productos cuadrado-perfecto">
+                    <img src="./img/Masa_Facil.jpeg">
+                </div>
+                <div class="bloque-contenido-productos">
+                    <h3>Masa facil</h3>
+                    <p>Masa facil para empanadas, paquete de 15 unidades</p>
+                      <a href="#" class="boton boton-blanco">COMPRAR</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="columna columna-33">
+              <div class="bloque-producto2">
+                <div class="bloque-img-productos cuadrado-perfecto">
+                    <img src="./img/Kit_Hamburguesas.jpeg">
+                </div>
+                <div class="bloque-contenido-productos">
+                    <h3>Kit Hamburguesas</h3>
+                    <p>Kit para preparar 4 hamburguesas</p>
+                      <a href="#" class="boton boton-blanco">COMPRAR</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="columna columna-33">
+              <div class="bloque-producto3">
+                <div class="bloque-img-productos cuadrado-perfecto">
+                    <img src="./img/Alimentos_al_vacio.jpeg">
+                </div>
+                <div class="bloque-contenido-productos">
+                    <h3>Alimentos preparados</h3>
+                    <p>Alimentos, empacados al vacio listos para calentar y servir, 500gr</p>
+                      <a href="#" class="boton boton-blanco">COMPRAR</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="cardvalidation">
+      <div class="container">
+        <div class="img-TC cuadrado-perfecto">
+          <img src="./img/TC_dorada.jpeg">
+        </div>
+
+      <br>
+      <button id="btn-validar">VALIDAR</button> 
+      
+      <button id="btn-comprar">COMPRAR</button></br>
+
+      </div>
+    </section>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <div class="row">
+            <div class="columna columna-50">
+              <h3-footer>
+                  Datos de contacto
+              </h3-footer>
+              <ul>
+                  <li>bocadoscol@gmail.com</li>
+                  <li>+573153471821</li>
+                  <li>Santa Bárbara de los hayuelos<br>Bogotá - Colombia</li>
+              </ul>
+
+            </div>
+            <div class="columna columna-50">
+              <h3-footer>
+                  Redes Sociales
+              </h3-footer>
+              <ul class="redes">
+                <li>
+                  <a href="#">
+                    <i class=""></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class=""></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="barra-footer">
+      &copy; Derechos Reservados - SC - 2022
+    </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

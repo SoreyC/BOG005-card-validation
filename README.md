@@ -435,3 +435,20 @@ Organización del Trabajo:
 * [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
 
 Únete al canal de Slack **#project-card-validation**
+
+
+README Primer Proyecto:
+Tarjeta de crédito válida para Bocados Colombia
+
+Esta web está diseñada para personas interesadas en realizar compras de postres y alimentos terminados desde la comodida de su hogar. 
+En este caso podrá acceder a realizar la compra y por medio del algoritmo de Luhn validaremos si la tarjeta ingresada es válida o no.
+
+Interfaz de usuario
+El usuario podrá:
+- Ingresar los datos de la Tarjeta de Crédito
+- Ver si la TC es válida o no mediante un mensaje. 
+- Si los datos son los correctos se podrán ocultar los números dejando visibles los 4 últimos caracteres.
+- De no ser válida podrá corregir los números ingresados y continuar con la compra.
+- Si el usuario no completa algún campo mostratá un alert
+- Una vez realizada la compra, podrá descargar un formulario para agendar la entrega de su pedido.
+
