@@ -1,3 +1,31 @@
+*
+{
+    box-sizing: border-box;
+}
+
+a
+{
+    display: inline-block;
+
+}
+
+
+p
+{
+    color: black;
+   text-align: center;
+   
+}
+
+h1
+{
+    color: black;
+   position: relative;
+   padding-top: 10%;
+   text-align: center;
+   font-size: 45px;
+}
+
 h3-footer
 {
     color: white;
@@ -8,32 +36,81 @@ ul
     color: white;
 }
 
-
-.container-logo
+header
 {
     background-color: black;
+    padding: 15px 0;
+    top: 0;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 2;
 }
 
-.cuadrado-perfecto
+header .container
 {
-  width: 100%;
-  padding-bottom: 100%;
-  position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cuadrado-perfecto img
+header .container .logo
 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+    width: 100px;
 }
 
-.columna-33
+header .container nav a
 {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+
+}
+
+.boton.boton-blanco
+{
+    color: red;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid red;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+
+}
+
+
+
+.container
+{
+    width: 1140px;
+    margin: o auto 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.seccion
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+.columna columna-33
+{
+  padding-right: 5px;
+  padding-left: 5px;
   width: 33.33%;
 }
 
@@ -43,8 +120,30 @@ ul
 
 }
 
-.barra-footer
+#productos .bloque-productos
 {
-    background-color: black;
+    border: 1px solid grey;
+}
 
+#productos .bloque-productos .bloque-img-productos img
+{
+    width: 33%;
+    
+}
+
+#productos .bloque-productos .bloque-img-productos.cuadrado-perfecto
+{
+  padding-bottom: 2%;
+}
+
+
+#productos .bloque-productos .bloque-contenido-productos
+{
+  padding: 2px;
+}
+
+#productos .bloque-productos .bloque-contenido-productos h3
+{
+  margin-top: 0;
+  font-size: 25px;
 }
