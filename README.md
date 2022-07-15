@@ -438,7 +438,7 @@ Organización del Trabajo:
 
 
 README Primer Proyecto:
-Tarjeta de crédito válida para Bocados Colombia
+      Tarjeta de crédito válida para Bocados Colombia
 
 Esta web está diseñada para personas interesadas en realizar compras de postres y alimentos terminados desde la comodida de su hogar. 
 En este caso podrá acceder a realizar la compra y por medio del algoritmo de Luhn validaremos si la tarjeta ingresada es válida o no.
@@ -452,3 +452,4 @@ El usuario podrá:
 - Si el usuario no completa algún campo mostratá un alert
 - Una vez realizada la compra, podrá descargar un formulario para agendar la entrega de su pedido.
 
+[![Compra online Bocados](/img/Prototipo1.jpeg)]
