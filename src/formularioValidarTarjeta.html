@@ -25,30 +25,33 @@
         <p>"Llevamos bocados de sabor a los hogares bogotanos"
         </p>
 
-        <h2>Valide su tarjeta a continuación</h2>
+        <h2>Para continuar con su compra valide los datos de su tarjeta de credito a continuación</h2>
         <section id="cardvalidation">
           <div class="container">
             <div class="img-TC">
               <img src="./img/TC_dorada.jpeg">
 
-              <form action="" method="post">
+              <form action="" id="nameValidacion" method="post">
                 <br><label for="name">Nombre y Apellido</label>
 
                 <input type="text" id="name" name="nombre_usuario" required></br>
+                </form>
 
-                <br><label for="numerotarjeta">Numero de tarjeta</label>
+                <form action="" id="formularioValidacion" class="formularioValidacion"> 
 
-                <input type="text" id="numero" name="numero_tarjeta" required
-                  minlength="16" maxlength="16"></br>
-
+                <br><label for="numerotarjeta">Numero de tarjeta</label></br>
+                <input type="text" id="numerotarjeta" required minlength="16" maxlength="16"></br>
 
                   <br>
-                  <button id="btn-validar">VALIDAR</button> 
+                  <br><button type="button" id="btn-validar">VALIDAR</button></br>
+                  <br><button type="button" id="intenteOtraTarjeta">INTENTE NUEVAMENTE</button></br>
+                  <br><button type="button"  id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
+                </form>
             
-                  <button id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
+                   
 
-              <!--  <p id="anuncio">TARJETA VÁLIDA</p>
-                  <p id="anuncio">TARJETA NO VÁLIDA</p> -->
+                 <p id="anuncio">TARJETA VÁLIDA</p>
+                  <p id="anuncio">TARJETA NO VÁLIDA</p>
 
               </form>
               
