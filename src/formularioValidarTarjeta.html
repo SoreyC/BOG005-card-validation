@@ -32,25 +32,27 @@
               <img src="./img/TC_dorada.jpeg">
 
               <form action="" id="nameValidacion" method="post">
+              
+                </form>
+
+              <form action="" id="formularioValidacion" class="formularioValidacion"> 
+
                 <br><label for="name">Nombre y Apellido</label>
 
                 <input type="text" id="name" name="nombre_usuario" required></br>
-                </form>
-
-                <form action="" id="formularioValidacion" class="formularioValidacion"> 
 
                 <br><label for="numerotarjeta">Numero de tarjeta</label></br>
-                <input type="text" id="numerotarjeta" required minlength="16" maxlength="16"></br>
+                <input type="text" id="numerotarjeta" required maxlength="16"></br>
 
                   <br>
-                  <br><button type="button" id="btn-validar">VALIDAR</button></br>
+                  <br><button type="submit" id="btn-validar">VALIDAR</button></br>
                   <br><button type="button" id="intenteOtraTarjeta">INTENTE NUEVAMENTE</button></br>
                   <br><button type="button"  id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
-                </form>
+              </form>
             
                    
 
-                 <p id="anuncio">TARJETA VÁLIDA</p>
+                  <p id="anuncio">TARJETA VÁLIDA</p>
                   <p id="anuncio">TARJETA NO VÁLIDA</p>
 
               </form>
