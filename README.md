@@ -452,4 +452,4 @@ El usuario podrá:
 - Si el usuario no completa algún campo mostratá un alert
 - Una vez realizada la compra, podrá descargar un formulario para agendar la entrega de su pedido.
 
-[![Compra online Bocados](./img/Prototipo1.jpeg)]
+![Compra online Bocados](src/img/Prototipo1.jpeg)
