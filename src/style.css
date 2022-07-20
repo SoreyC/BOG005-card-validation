@@ -115,6 +115,24 @@ h3
    
 }
 
+.container .img-TC img
+{
+    width: 500px;
+    height: 400px;
+}
+
+/*Para cambiar de comprar a validar*/
+
+#bloque_comprar
+{
+    display: block;
+}
+
+#bloque_validar
+{
+    display: none;
+}
+
 
 /*Estilando el footer*/
 

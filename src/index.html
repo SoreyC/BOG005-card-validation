@@ -26,44 +26,85 @@
     <p>"Llevamos bocados de sabor a los hogares bogotanos"
     </p>
 
-    <div class="cartas">
-      <div class="carta">
-        <div class="bloque-img-productos cuadrado-perfecto">
-          <img src="./img/MasasParaEmpanadas.jpeg">
+    <div id="bloque_comprar">
+      <div class="cartas">
+        <div class="carta">
+          <div class="bloque-img-productos cuadrado-perfecto">
+            <img src="./img/MasasParaEmpanadas.jpeg">
+          </div>
+          <div class="bloque-contenido-productos">
+            <h3>Masa facil</h3>
+            <p>Masa facil para empanadas, paquete de 15 unidades</p>
+            <button id="btn-comprar1" class="boton-comprar">COMPRAR</button>
+          </div>
         </div>
-        <div class="bloque-contenido-productos">
-          <h3>Masa facil</h3>
-          <p>Masa facil para empanadas, paquete de 15 unidades</p>
-          <a href="formularioValidarTarjeta.html" class="boton-comprar">COMPRAR</a>
+        <div class="carta">
+          <div class="bloque-img-productos cuadrado-perfecto">
+            <img src="./img/KitparaHamburguesas.jpeg">
+          </div>
+          <div class="bloque-contenido-productos">
+            <h3>Kit Hamburguesas</h3>
+            <p>Kit para preparar cuatro (4) hamburguesas</p>
+            <button id="btn-comprar2" class="boton-comprar">COMPRAR</button>
+          </div>
+        </div>
+        <div class="carta">
+          <div class="bloque-img-productos cuadrado-perfecto">
+            <img src="./img/AlimentosEmpacadosAlVacio.jpeg">
+          </div>
+          <div class="bloque-contenido-productos">
+            <h3>Alimentos preparados</h3>
+            <p>Alimentos, empacados al vacio listos para calentar y servir, 500gr</p>
+            <button id="btn-comprar3" class="boton-comprar">COMPRAR</button>
+          </div>
         </div>
       </div>
-      <div class="carta">
-        <div class="bloque-img-productos cuadrado-perfecto">
-          <img src="./img/KitparaHamburguesas.jpeg">
-      </div>
-      <div class="bloque-contenido-productos">
-          <h3>Kit Hamburguesas</h3>
-          <p>Kit para preparar cuatro (4) hamburguesas</p>
-            <a href="formularioValidarTarjeta.html" class="boton-comprar">COMPRAR</a>
-      </div>
-      </div>
-      <div class="carta">
-        <div class="bloque-img-productos cuadrado-perfecto">
-          <img src="./img/AlimentosEmpacadosAlVacio.jpeg">
-      </div>
-      <div class="bloque-contenido-productos">
-          <h3>Alimentos preparados</h3>
-          <p>Alimentos, empacados al vacio listos para calentar y servir, 500gr</p>
-            <a href="formularioValidarTarjeta.html" class="boton-comprar">COMPRAR</a>
-      </div>
-      </div>
-
     </div>
 
-          
+    <!-- Creando el bloque para la vista de la pantalla de validación de la tarjeta-->
 
+    <div id="bloque_validar">
+      <center>
+        <h2>Para continuar con su compra valide los datos de su tarjeta de credito, a continuación</h2>
+      
+      <div class="container">
+        <div class="img-TC">
+          <img src="./img/TC_dorada.jpeg">
+
+
+          <form action="" id="formularioValidacion" class="formularioValidacion">
+
+            <br><label for="name">Nombre y Apellido</label>
+
+            <input type="text" id="name" name="nombre_usuario" required></br>
+
+            <br><label for="numerotarjeta">Numero de tarjeta</label>
+
+            <input type="text" id="numerotarjeta" required maxlength="16"></br>
+
+
+            <br><button type="submit" id="btn-validar">VALIDAR</button></br>
+            <br><button type="submit" id="intenteOtraTarjeta">INTENTE NUEVAMENTE</button></br>
+            <br><button type="submit" id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
+          </form>
+        </center>
+
+
+          <p id="anuncio">TARJETA VÁLIDA</p>
+          <p id="anuncio">TARJETA NO VÁLIDA</p>
+
+          </form>
+
+
+          <!-- Se crea un enlace entre el boton volver a comprar y la vista inicial con el (a href)-->
+          <br>
+          <a href="../index.html" class="btn-volver-a-compra">VOLVER A COMPRAR</a></br>
+
+
+
+        </div>
       </div>
-    </section>
+    </div>
   </main>
   <footer>
     <div class="container-footer">
@@ -75,28 +116,28 @@
           <ul>
             <li>bocadoscol@gmail.com</li>
             <li>+573153471821</li>
-            <li>Santa Bárbara de los hayuelos<br>Bogotá - Colombia</li>
+            <li>Santa Clara de los hayuelos<br>Bogotá - Colombia</li>
           </ul>
 
         </div>
-        
-          <h3-footer>
-            Redes Sociales
-          </h3-footer>
-          <ul class="redes">
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-instagram-square"></i>
-              </a>
-            </li>
-          </ul>
 
-        
+        <h3-footer>
+          Redes Sociales
+        </h3-footer>
+        <ul class="redes">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram-square"></i>
+            </a>
+          </li>
+        </ul>
+
+
       </div>
     </div>
     <div class="barra-footer">

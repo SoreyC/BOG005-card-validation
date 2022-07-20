@@ -1,125 +1,121 @@
-<!DOCTYPE html>
+<!--DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Reconocer Tarjeta de crédito válida">
-        <title>Tarjeta de crédito válida</title>
-        <link rel="shortcut icon" href="./img/favicon_package_v0.16/favicon-32x32.png" />
-        <link rel="stylesheet" href="style.css" />
-      </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Reconocer Tarjeta de crédito válida">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="shortcut icon" href="./img/favicon_package_v0.16/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
 <body>
-    <header>
-        <div class="container">
-          <a href="index.html">
-            <img src="./img/Logo-Bocados-Julo2020.jpg" class="logo">
-          </a>
-          <nav>
-            <a href="#productos">Productos</a>
-            <a href="#contactenos">Contactenos</a>
-          </nav>
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img src="./img/Logo-Bocados-Julo2020.jpg" class="logo">
+      </a>
+      <nav>
+        <a href="#productos">Productos</a>
+        <a href="#contactenos">Contactenos</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Bienvenidos a Bocados</h1>
+    <p>"Llevamos bocados de sabor a los hogares bogotanos"
+    </p>
+
+    <h2>Para continuar con su compra valide los datos de su tarjeta de credito a continuación</h2>
+    <section id="cardvalidation">
+      <div class="container">
+        <div class="img-TC">
+          <img src="./img/TC_dorada.jpeg">
+
+          <form action="" id="nameValidacion" method="post">
+
+          </form>
+
+          <form action="" id="formularioValidacion" class="formularioValidacion">
+
+            <br><label for="name">Nombre y Apellido</label>
+
+            <input type="text" id="name" name="nombre_usuario" required></br>
+
+            <br><label for="numerotarjeta">Numero de tarjeta</label></br>
+            <input type="text" id="numerotarjeta" required maxlength="16"></br>
+
+            <br>
+            <br><button type="submit" id="btn-validar">VALIDAR</button></br>
+            <br><button type="submit" id="intenteOtraTarjeta">INTENTE NUEVAMENTE</button></br>
+            <br><button type="submit" id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
+          </form>
+
+
+
+          <p id="anuncio">TARJETA VÁLIDA</p>
+          <p id="anuncio">TARJETA NO VÁLIDA</p>
+
+          </form>
+
+
+
+          <br>
+          <a href="../index.html" class="btn-volver-a-compra">VOLVER A COMPRAR</a></br>
+
+
+
         </div>
-    </header>
-      <main>
-        <h1>Bienvenidos a Bocados</h1>
-        <p>"Llevamos bocados de sabor a los hogares bogotanos"
-        </p>
-
-        <h2>Para continuar con su compra valide los datos de su tarjeta de credito a continuación</h2>
-        <section id="cardvalidation">
-          <div class="container">
-            <div class="img-TC">
-              <img src="./img/TC_dorada.jpeg">
-
-              <form action="" id="nameValidacion" method="post">
-              
-                </form>
-
-              <form action="" id="formularioValidacion" class="formularioValidacion"> 
-
-                <br><label for="name">Nombre y Apellido</label>
-
-                <input type="text" id="name" name="nombre_usuario" required></br>
-
-                <br><label for="numerotarjeta">Numero de tarjeta</label></br>
-                <input type="text" id="numerotarjeta" required maxlength="16"></br>
-
-                  <br>
-                  <br><button type="submit" id="btn-validar">VALIDAR</button></br>
-                  <br><button type="button" id="intenteOtraTarjeta">INTENTE NUEVAMENTE</button></br>
-                  <br><button type="button"  id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
-              </form>
-            
-                   
-
-                  <p id="anuncio">TARJETA VÁLIDA</p>
-                  <p id="anuncio">TARJETA NO VÁLIDA</p>
-
-              </form>
-              
-              
-
-             <br> 
-             <a href="../index.html" class="btn-volver-a-compra">VOLVER A COMPRAR</a></br>
-              
-              
-
-          </div>
-        </section>
+    </section>
 
 
 
 
 
-      </main>
-      <footer>
-        <div class="container-footer">
-          <div class="contactos-footer">
-            <div class="columna columna-50">
-              <h3-footer>
-                Datos de contacto
-              </h3-footer>
-              <ul>
-                <li>bocadoscol@gmail.com</li>
-                <li>+573153471821</li>
-                <li>Santa Bárbara de los hayuelos<br>Bogotá - Colombia</li>
-              </ul>
-    
-            </div>
-            
-              <h3-footer>
-                Redes Sociales
-              </h3-footer>
-              <ul class="redes">
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-facebook-square"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-instagram-square"></i>
-                  </a>
-                </li>
-              </ul>
-    
-            
-          </div>
+  </main>
+  <footer>
+    <div class="container-footer">
+      <div class="contactos-footer">
+        <div class="columna columna-50">
+          <h3-footer>
+            Datos de contacto
+          </h3-footer>
+          <ul>
+            <li>bocadoscol@gmail.com</li>
+            <li>+573153471821</li>
+            <li>Santa Bárbara de los hayuelos<br>Bogotá - Colombia</li>
+          </ul>
+
         </div>
-        <div class="barra-footer">
-          &copy; Derechos Reservados - SC - 2022
-        </div>
-      </footer>
+
+        <h3-footer>
+          Redes Sociales
+        </h3-footer>
+        <ul class="redes">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram-square"></i>
+            </a>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+    <div class="barra-footer">
+      &copy; Derechos Reservados - SC - 2022
+    </div>
+  </footer>
   <script src="index.js" type="module"></script>
 
 </body>
 
 
+<!--  
 
-
-</html>
-
-
-
-
-
+</html>-->
