@@ -128,10 +128,21 @@ h3
     display: block;
 }
 
-#bloque_validar
+#bloque_validar,#bloque_finalizar
 {
     display: none;
 }
+
+#anuncioV 
+{
+    display: none;
+}
+
+#anuncioNV 
+{
+    display: none;
+}
+
 
 
 /*Estilando el footer*/

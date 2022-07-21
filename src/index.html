@@ -80,27 +80,26 @@
 
             <br><label for="numerotarjeta">Numero de tarjeta</label>
 
-            <input type="text" id="numerotarjeta" required maxlength="16"></br>
+            <input type="text" id="numerotarjeta" required minlength= 16 maxlength="16"></br>
 
 
-            <br><button type="submit" id="btn-validar">VALIDAR</button></br>
+            <br><button type="button" id="btn-validar">VALIDAR</button></br>
             <br><button type="submit" id="intenteOtraTarjeta">INTENTE NUEVAMENTE</button></br>
             <br><button type="submit" id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
           </form>
         </center>
 
-
-          <p id="anuncio">TARJETA VÁLIDA</p>
-          <p id="anuncio">TARJETA NO VÁLIDA</p>
-
           </form>
-
+          <p id="anuncioV">TARJETA VÁLIDA</p>
+          <p id="anuncioNV">TARJETA NO VÁLIDA</p>
 
           <!-- Se crea un enlace entre el boton volver a comprar y la vista inicial con el (a href)-->
+          <div id="bloque_finalizar" class="container">
+            <h2 id="gracias">¡Gracias por su compra!</h2>
           <br>
-          <a href="../index.html" class="btn-volver-a-compra">VOLVER A COMPRAR</a></br>
+         <a href="../index.html" class="btn-volver-a-compra">VOLVER A COMPRAR</a></br>
 
-
+          </div>
 
         </div>
       </div>

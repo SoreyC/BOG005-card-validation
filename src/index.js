@@ -7,32 +7,78 @@ console.log(validator);
 document.getElementById("btn-comprar1").addEventListener("click", () => {
     document.getElementById("bloque_validar").style.display = "block";
     document.getElementById("bloque_comprar").style.display = "none";
+    document.getElementById("bloque_finalizar").style.display = "none";
 })
 
 document.getElementById("btn-comprar2").addEventListener("click", () => {
     document.getElementById("bloque_validar").style.display = "block";
     document.getElementById("bloque_comprar").style.display = "none";
+    document.getElementById("bloque_finalizar").style.display = "none";
 })
 
 document.getElementById("btn-comprar3").addEventListener("click", () => {
     document.getElementById("bloque_validar").style.display = "block";
     document.getElementById("bloque_comprar").style.display = "none";
+    document.getElementById("bloque_finalizar").style.display = "none";
 })
+
+//Finalizar compra
+
+document.getElementById("btn-finalizar-compra").addEventListener("click", () => {
+    document.getElementById("bloque_finalizar").style.display = "block";
+    document.getElementById("bloque_validar").style.display = "none";
+    document.getElementById("bloque_comprar").style.display = "none";
+})
+
+//Boton validar
+
+document.getElementById("btn-validar").addEventListener("click", () => {
+    let input = document.getElementById("numerotarjeta").value
+    
+    let valido = validator.isValid(input);
+
+console.log(valido);
+
+ //Si el modulo de valido es 0 muestra mensaje de tarjeta válida de lo contrario muestra tarjeta no válida
+ //if (valido){
+   // document.getElementById("anuncioV").style.display = "block";
+    //let mascara = validator.maskify(input.value);
+    //input.value = mascara;
+ //}
+ //else{
+   // document.getElementById("anuncioNV").style.display = "block";
+    //let mascara2 = validator.maskify(input.value);
+    //input.value = mascara2;
+ //}
+})
+
+
+
+
+
+
+
+
 
 // Revertir el numero
 // 12345 => 54321 => ['1', '2', '3', '4', '5'] => ['5', '4', '3', '2', '1'] => '54321' => 54321
 
-function revertirNumero(numerotarjeta){
-    return Number(numerotarjeta.toString().split('').reverse().join(''))
-}
+//function revertirNumero(numerotarjeta){
+   // return Number(numerotarjeta.toString().split('').reverse().join(''))
+//}
 
-let valor = 12345;
+//let valor = 12345;
 
-console.log(valor);
-console.log(revertirNumero(valor));
+//console.log(valor);
 
-isvali
+//let valorInput = document.getElementById("numerotarjeta").value;
+    // document.getElementById("numerotarjeta").innerHTML = (valorInput.value);
 
+//console.log(valorInput);
+
+//document.getElementById("validad").addEventListener("click", () => {
+ //   let valido = validador.isValid(valorInput.value);
+//})
 
 
 
