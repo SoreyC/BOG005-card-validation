@@ -32,34 +32,44 @@ const validator = {
   //maskify
 
   maskify: (creditCardNumber) => {
-    let numeroTaj = creditCardNumber.length;
+    let numeroTaj = creditCardNumber;
     let numero = creditCardNumber;
-    if (numeroTaj < 4) {
-      return numero;
-      //console.log (typeof numero);
+   // if (numeroTaj.length < 4) {
+      return numeroTaj;
+      // console.log (typeof numero);
     }
-    else {
-      for (var i = 0; i < numeroTaj - 4; i++) {
-        if (i < creditCardNumber.length) {
-          var cadena1 = creditCardNumber.slice(-4);
-          var cadena2 = "#";
-          var cadena3 = cadena2.repeat(numeroTaj - 4) + cadena1;
-          return cadena3
-          //console.log (cadena3);
-        }
-      }
-    }
+    //else {
+    //  let last4 = ''
+     // for (let i = numeroTaj.length - 4; i < numeroTaj.length; i++) {
+    //    last4 += numeroTaj[i]
+    //  }
+   //   let mascara = ''
+    //  for (let j = 0; j < numeroTaj.length - 4; j++) {
+    //    mascara += '#'
+     // }
+    //  return mascara + last4
 
-  }
-  // metodo que me devuelva si es par (boleanos)
+      //if (creditCardNumber.length) {
+      //var cadena1 = creditCardNumber.slice(-4);
+      //var cadena2 = "#";
+      //var cadena3 = cadena2.repeat(numeroTaj - 4) + cadena1;
+      //return cadena3
+      //console.log (cadena3);
 
-
-
-
-
-
+    //}
+   // return numeroTaj.slice(0, -4), replace(/./g, '#') + numeroTaj.slice(-4);
+  //}
 
 }
+// metodo que me devuelva si es par (boleanos)
+
+
+
+
+
+
+
+
 
 export default validator;
 

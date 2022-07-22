@@ -66,43 +66,46 @@
     <div id="bloque_validar">
       <center>
         <h2>Para continuar con su compra valide los datos de su tarjeta de credito, a continuación</h2>
+
+        <div class="container">
+          <div class="img-TC">
+            <img src="./img/TC_dorada.jpeg">
+
+
+            <form action="" id="formularioValidacion" class="formularioValidacion">
+
+              <br><label for="name">Nombre y Apellido</label>
+
+              <input type="text" id="name" name="nombre_usuario" required></br>
+
+              <br><label for="numerotarjeta">Numero de tarjeta</label>
+
+              <input type="text" id="numerotarjeta" required minlength=16 maxlength="16"></br>
+
+
+              <br><button type="button" id="btn-validar">VALIDAR</button></br>
+              <br><a href="../index.html" class="intenteOtraTarjeta">INTENTE NUEVAMENTE</a></br>
+              <!--<br><button type="submit" id="intenteOtraTarjeta">INTENTE NUEVAMENTE</button></br>-->
+
+            </form>
+      </center>
+      <article>
+      <br><button type="button" id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
       
-      <div class="container">
-        <div class="img-TC">
-          <img src="./img/TC_dorada.jpeg">
+      <p id="anuncioV">TARJETA VÁLIDA</p>
+      <p id="anuncioNV">TARJETA NO VÁLIDA</p>
+    </article>
 
+      <!-- Se crea un enlace entre el boton volver a comprar y la vista inicial con el (a href)-->
+      <div id="bloque_finalizar" class="container">
+        <h2 id="gracias">¡Gracias por su compra!</h2>
+        <br>
+        <a href="../index.html" class="btn-volver-a-compra">VOLVER A COMPRAR</a></br>
 
-          <form action="" id="formularioValidacion" class="formularioValidacion">
-
-            <br><label for="name">Nombre y Apellido</label>
-
-            <input type="text" id="name" name="nombre_usuario" required></br>
-
-            <br><label for="numerotarjeta">Numero de tarjeta</label>
-
-            <input type="text" id="numerotarjeta" required minlength= 16 maxlength="16"></br>
-
-
-            <br><button type="button" id="btn-validar">VALIDAR</button></br>
-            <br><button type="submit" id="intenteOtraTarjeta">INTENTE NUEVAMENTE</button></br>
-            <br><button type="submit" id="btn-finalizar-compra">FINALIZAR COMPRAR</button></br>
-          </form>
-        </center>
-
-          </form>
-          <p id="anuncioV">TARJETA VÁLIDA</p>
-          <p id="anuncioNV">TARJETA NO VÁLIDA</p>
-
-          <!-- Se crea un enlace entre el boton volver a comprar y la vista inicial con el (a href)-->
-          <div id="bloque_finalizar" class="container">
-            <h2 id="gracias">¡Gracias por su compra!</h2>
-          <br>
-         <a href="../index.html" class="btn-volver-a-compra">VOLVER A COMPRAR</a></br>
-
-          </div>
-
-        </div>
       </div>
+
+    </div>
+    </div>
     </div>
   </main>
   <footer>
