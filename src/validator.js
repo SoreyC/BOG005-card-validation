@@ -1,25 +1,24 @@
 const validator = {
 
-
   isValid: (creditCardNumber) => {
 
     //Para pasar un string a un array y se reversan
     let numbCard = creditCardNumber.split("");
 
     let numbCardReversed = numbCard.reverse();
-    console.log(numbCardReversed)
+    //console.log(numbCardReversed)
 
     //Recorrido de un array (ciclo)
     let resultado = [];
     for (var i = 0; i < numbCardReversed.length; i++) {
-      console.log('indice', i)
+      //console.log('indice', i)
       if (!esPar(i)) {
         numbCardReversed[i] = numb2(Number(numbCardReversed[i]));
       } else {
         numbCardReversed[i] = Number(numbCardReversed[i]);
       }
     }
-    console.log(numbCardReversed);
+    //console.log(numbCardReversed);
 
     const sumTotal = sumarNum(numbCardReversed);
 
@@ -32,57 +31,36 @@ const validator = {
   //maskify
 
   maskify: (creditCardNumber) => {
-    let numeroTaj = creditCardNumber;
-    let numero = creditCardNumber;
-   // if (numeroTaj.length < 4) {
-      return numeroTaj;
-      // console.log (typeof numero);
+    let mascara = ''
+    let last4 = ''
+      for(let i = 0; i < creditCardNumber.length-4; i++){
+        mascara += '#'
+      
+
+      }
+      //console.log(mascara)
+
+      for(let i = creditCardNumber.length-4; i< creditCardNumber.length; i++){
+        last4 += creditCardNumber[i]
+        //console.log(last4)
+      }
+      return mascara + last4;
     }
-    //else {
-    //  let last4 = ''
-     // for (let i = numeroTaj.length - 4; i < numeroTaj.length; i++) {
-    //    last4 += numeroTaj[i]
-    //  }
-   //   let mascara = ''
-    //  for (let j = 0; j < numeroTaj.length - 4; j++) {
-    //    mascara += '#'
-     // }
-    //  return mascara + last4
-
-      //if (creditCardNumber.length) {
-      //var cadena1 = creditCardNumber.slice(-4);
-      //var cadena2 = "#";
-      //var cadena3 = cadena2.repeat(numeroTaj - 4) + cadena1;
-      //return cadena3
-      //console.log (cadena3);
-
-    //}
-   // return numeroTaj.slice(0, -4), replace(/./g, '#') + numeroTaj.slice(-4);
-  //}
-
 }
-// metodo que me devuelva si es par (boleanos)
-
-
-
-
-
-
-
-
 
 export default validator;
 
+// metodo que me devuelva si es par (boleanos)
 
 function esPar(numero) {
-  console.log('esPar', numero % 2 == 0);
+ // console.log('esPar', numero % 2 == 0);
   return numero % 2 == 0;
 
 }
 
 
 function numb2(numero) {
-  console.log('numb2entrada', numero)
+ // console.log('numb2entrada', numero)
   numero = numero * 2;
   let numeros = [];
   if (numero >= 10) {
@@ -90,7 +68,7 @@ function numb2(numero) {
     numero = Number(numeros[0]) + Number(numeros[1]);
 
   }
-  console.log('numb2', numero, numeros);
+ // console.log('numb2', numero, numeros);
   return numero;
 }
 
@@ -101,7 +79,7 @@ function sumarNum(numbCardReversed) {
   for (let j = 0; j < numbCardReversed.length; j++) {
     sum += numbCardReversed[j];
   }
-  console.log('suma', sum)
+ // console.log('suma', sum)
   return sum;
 }
 
