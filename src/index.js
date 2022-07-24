@@ -62,17 +62,8 @@ document.getElementById("btn-validar").addEventListener("click", () => {
         document.getElementById("anuncioV").style.display = "none";
 
     }
+
+    if (!valido){
+        return alert("¡INTENTE NUEVAMENTE!")
+    }
 })
-
-// Eliminando espacios en blanco y letras en el input del número de la tarjeta
-
-formularioValidacion.numerotarjeta.addEventListener("keyup", (e) => {
-    let valorInput = e.target.value;
-    
-
-    //para eliminar los espacios en blanco utilizo la expresion regular(/\s/g,'') 
-    //página regexr para probar las expresiones 
-    formularioValidacion.numerotarjeta.value = valorInput.replace(/\s/g, '')
-        //para elimirar las letras utilizo la expresion regular(/\D/g,'')
-        .replace(/\D/g, '');
-});

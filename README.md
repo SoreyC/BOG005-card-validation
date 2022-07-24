@@ -453,3 +453,12 @@ El usuario podrá:
 - Una vez realizada la compra, podrá descargar un formulario para agendar la entrega de su pedido.
 
 ![Compra online Bocados](src/img/Prototipo1.jpeg)
+
+El feedback de mi primer prototipo me permitió realizar mejoras en mi prototipo de alta fidelidad, como, agregar como se vería el enmascarado de la tarjeta, luego de que el usuario introduzca los datos.
+
+A continuación adjunto el prototipo de alta fidelidad realizados en figma: 
+
+![Primera vista, Bocados](src/img/PrototipoBocados1.png)
+
+![Primera vista, Bocados](src/img/PrototipoBocados2.png)
+
