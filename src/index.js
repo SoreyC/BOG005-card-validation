@@ -48,9 +48,10 @@ document.getElementById("btn-validar").addEventListener("click", () => {
 
     //Si el modulo de valido es 0 muestra mensaje de tarjeta válida de lo contrario muestra tarjeta no válida
     let mascara = validator.maskify(input);
+    
     document.getElementById("numerotarjeta").value = mascara;
 
-    //console.log(mascara)
+    console.log(mascara)
 
     if (valido) {
         document.getElementById("anuncioV").style.display = "block";
@@ -60,10 +61,8 @@ document.getElementById("btn-validar").addEventListener("click", () => {
     else {
         document.getElementById("anuncioNV").style.display = "block";
         document.getElementById("anuncioV").style.display = "none";
-
-    }
-
-    if (!valido){
+       
         return alert("¡INTENTE NUEVAMENTE!")
     }
+
 })

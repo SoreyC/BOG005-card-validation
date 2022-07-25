@@ -9,7 +9,7 @@ const validator = {
     //console.log(numbCardReversed)
 
     //Recorrido de un array (ciclo)
-    let resultado = [];
+    
     for (var i = 0; i < numbCardReversed.length; i++) {
       //console.log('indice', i)
       if (!esPar(i)) {
@@ -42,7 +42,7 @@ const validator = {
 
       for(let i = creditCardNumber.length-4; i< creditCardNumber.length; i++){
         last4 += creditCardNumber[i]
-        //console.log(last4)
+        console.log(last4)
       }
       return mascara + last4;
     }
