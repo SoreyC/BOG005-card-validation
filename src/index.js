@@ -62,7 +62,7 @@ document.getElementById("btn-validar").addEventListener("click", () => {
         document.getElementById("anuncioNV").style.display = "block";
         document.getElementById("anuncioV").style.display = "none";
        
-        return alert("¡INTENTE NUEVAMENTE!")
+        return alert("¡TARJETA NO VALIDA INTENTE NUEVAMENTE!")
     }
 
 })
