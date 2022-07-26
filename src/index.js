@@ -51,7 +51,7 @@ document.getElementById("btn-validar").addEventListener("click", () => {
     
     document.getElementById("numerotarjeta").value = mascara;
 
-    console.log(mascara)
+    //console.log(mascara)
 
     if (valido) {
         document.getElementById("anuncioV").style.display = "block";
